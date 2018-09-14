@@ -20,7 +20,8 @@ int main()
 {
   UTST_BEGIN();
 
-  UTST_ASSERT_INT_EQ( gcd(0,5), 5 );
+  UTST_ASSERT_INT_EQ( gcd(0,5), 0 );
+  UTST_ASSERT_INT_EQ( gcd(15,9), 3 );
 
   UTST_END();
   return 0;
